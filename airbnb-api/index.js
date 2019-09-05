@@ -4,8 +4,8 @@ const app = express()
 
 app.listen(4000, () => console.log('Ready on port 4000'))
 
-// 80202
-app.get('/', (req, res) => res.send('Welcome to Airbnb API'))
+// 80202 - 80301
+app.get('/', require('./controllers/root'))
 
 // 80203
 app.get('/places', (req, res) => res.send({places: [
